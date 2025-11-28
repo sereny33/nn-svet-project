@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <!-- header navigation -->
       <nav class="header__menu">
         <ul class="header__links-list">
@@ -26,10 +26,10 @@
             <a href="#0" class="header__link menu__link_active">главная</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#0" class="header__link">товары</a>
+            <a href="#categories" class="header__link">товары</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#0" class="header__link">о нас</a>
+            <a href="#about" class="header__link">о нас</a>
           </li>
         </ul>
       </nav>
@@ -53,28 +53,55 @@
     <main>
       <!-- cover section -->
       <section class="cover">
-        <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="aligned-text aligned-text_left"><span class="yellow-letter">н</span>есем</span>
           <span class="aligned-text aligned-text_center"><span class="yellow-letter">н</span>овый</span>
-          <span class="aligned-text aligned-text_right"><span class="yellow-letter">с</span>вет</span>
+          <span class="aligned-text aligned-text_right"><span class="yellow-letter">свет</span></span>
         </h1>
         <div class="cover__description">
-          <p class="letter-spacing-extended">
+          <p class="cover__descrtiption-text letter-spacing-extended">
             Освещение и электрика  для дома, бизнеса  
             <span class="no-letter-spacing">и дизайна</span>
           </p>
           <button class="bet-button">Позвони нам</button>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="social-link" href="https://wa.me/79511440589" target="_blank">
+                <img
+                  class="social-icon"
+                  src="./images/whatsapp-white-icon.svg"
+                  alt="Логотип Youtube"
+                />
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link" href="#0" target="_blank">
+                <img
+                  class="social-icon"
+                  src="./images/vk-white.svg"
+                  alt="Логотип VK"
+                />
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-link" href="https://t.me/+79511440589" target="_blank">
+                <img
+                  class="social-icon"
+                  src="./images/Telegram.svg"
+                  alt="Логотип Telegram"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
-      <!-- lots section -->
-      <section class="lots">
-        <h2 class="lots__heading">Категории</h2>
-        <ul class="lots__card-list">
-          <li class="lots__card-list-item">
-            <a class="card-link" href="#0">
+      <!-- categories section -->
+      <section class="categories" id="categories">
+        <h2 class="categories__heading">Категории</h2>
+        <ul class="categories__card-list">
+          <li class="categories__card-list-item">
+            <a class="card-link" href="https://basicdecor.ru/catalog/lyustry/" target="_blank">
               <article class="card card_type_chandelier">
-                <div class="overlay"></div>
                 <h3 class="card__title">
                   Люстры
                 </h3>
@@ -84,10 +111,9 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">
-            <a class="card-link" href="#0">
+          <li class="categories__card-list-item">
+            <a class="card-link" href="https://basicdecor.ru/catalog/svetodiodnaya-lenta/" target="_blank">
               <article class="card card_type_led">
-                <div class="overlay"></div>
                 <h3 class="card__title">
                   LED
                 </h3>
@@ -97,10 +123,9 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">
-            <a class="card-link" href="#0">
+          <li class="categories__card-list-item">
+            <a class="card-link" href="https://basicdecor.ru/catalog/nastolnye-lampy/" target="_blank">
               <article class="card card_type_lamp">
-                <div class="overlay"></div>
                 <h3 class="card__title">
                   Лампы
                 </h3>
@@ -111,10 +136,10 @@
             </a>
           </li>
         </ul>
-        <a class="lots__look-more-link" href="#0">посмотреть больше</a>
+        <a class="categories__look-more-link" href="https://basicdecor.ru/catalog/svetilniki/" target="_blank">посмотреть больше</a>
       </section>
       <!-- about section -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__column">
           <div class="about__logo">
             <img
@@ -138,53 +163,53 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <!-- footer contact information-->
       <address class="address footer__address">
       <address class="address">
         <a href="tel:+78313235110">+7 (831) 323-51-10</a>
         <a href="mailto:email@mail.ru">email@mail.ru</a>
-        <p>просп. Ленина, 42 этаж 1, Нижний Новгород</p>
+        <a href="https://yandex.ru/maps/-/CLW-e4nw" target="_blank">просп. Ленина, 42 этаж 1, Нижний Новгород</a>
       </address>
       </address>
       <!-- footer navigation -->
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a href="#0" class="footer__menu-link menu__link_active">главная</a>
+            <a href="#header" class="footer__menu-link menu__link_active">главная</a>
           </li>
           <li class="footer__menu-list-item">
-            <a href="#0" class="footer__menu-link">товары</a>
+            <a href="#categories" class="footer__menu-link">товары</a>
           </li>
           <li class="footer__menu-list-item">
-            <a href="#0" class="footer__menu-link">о нас</a>
+            <a href="#about" class="footer__menu-link">о нас</a>
           </li>
         </ul>
       </nav>
       <!-- footer social links -->
-      <ul class="footer__social-list">
-        <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#0">
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a class="social-link" href="https://wa.me/79511440589" target="_blank">
             <img
-              class="footer__social-icon"
-              src="./images/yt.svg"
+              class="social-icon"
+              src="./images/whatsapp-white-icon.svg"
               alt="Логотип Youtube"
             />
           </a>
         </li>
-        <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#0">
+        <li class="social-list-item">
+          <a class="social-link" href="#0" target="_blank">
             <img
-              class="footer__social-icon"
-              src="./images/vk.svg"
+              class="social-icon"
+              src="./images/vk-white.svg"
               alt="Логотип VK"
             />
           </a>
         </li>
-        <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#0">
+        <li class="social-list-item">
+          <a class="social-link" href="https://t.me/+79511440589" target="_blank">
             <img
-              class="footer__social-icon"
+              class="social-icon"
               src="./images/Telegram.svg"
               alt="Логотип Telegram"
             />
