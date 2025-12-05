@@ -329,6 +329,7 @@ color: #FDDB05;
   width: 240px;
   min-height: 48px;
   list-style: none;
+  z-index: 1;
 }
 
 .social-list-item {
@@ -412,6 +413,11 @@ color: #FDDB05;
 .categories,
 .about {
   margin: 0 0 20px 0;
+}
+
+.categories__card-list-item {
+  flex: 1 1 0%;
+  min-height: initial;
 }
 
 .about {
